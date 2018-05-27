@@ -67,7 +67,7 @@ Route::middleware(['auth'])->group(function () {
     Route::post('users/{user}/edit', 'UserController@edit')->name('users.edit')
         ->middleware('permission:users.edit');
 
-    //Provincias
+//Provincias
     Route::post('provincias/store', 'ProvinciaController@store')->name('provincias.store')
         ->middleware('permission:provincias.create');
 
